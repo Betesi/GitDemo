@@ -30,6 +30,8 @@ public class Locators2 {
 	  Assert.assertEquals(driver.findElement(By.cssSelector("h2")).getText(),"Hello "+name+",");
 driver.findElement(By.xpath("//button[text()='Log Out']")).click();
 driver.close();
+driver.quit();
+
 
 	}
 
