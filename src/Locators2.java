@@ -29,8 +29,11 @@ public class Locators2 {
 	   Assert.assertEquals(driver.findElement(By.tagName("p")).getText(), "You are successfully logged in.");
 	  Assert.assertEquals(driver.findElement(By.cssSelector("h2")).getText(),"Hello "+name+",");
 driver.findElement(By.xpath("//button[text()='Log Out']")).click();
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 driver.close();
-driver.quit();
+//driver.close();
+
+
 
 
 	}
